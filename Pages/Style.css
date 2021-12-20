@@ -1,0 +1,166 @@
+/*
+
+Mausmi Patel
+Fall 2020
+
+    Salmon           #ff8766
+    Golden yellow    #ffba66
+    Pink             #ff6678
+    Light pink       #ffd7cc
+    Grey             #b3b3b3
+
+*/
+/* Global settings */
+h1 {text-align: center;text-decoration: underline}
+h2 {text-align: center; font-size: 15pt; color: forestgreen}
+h4 {text-align: center; font-size: 20pt}
+.wrapper {;margin:auto; width: 80%;background-color: beige}
+
+/* Nav section */
+
+nav {
+   width: 80%;
+    margin: auto;
+    text-align: center;
+    height: 60px;
+    background-color: lightblue;
+
+    /*.nav{width: 80%; height: 30px;margin:auto; background-color: #1b9acc;text-align: center;line-height: 30px; color: darkblue;}
+.menu{float: left; width: 25%;} */
+
+}
+
+nav p {
+    font-family: arial;
+    color: red;
+    font-size: 20px;
+    line-height: 30px;
+    float: left;
+    padding: 14px 20px
+}
+nav ul {
+    float: left;
+}
+
+
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    font-family: arial;
+    color: red;
+    font-size: 20px;
+    display: block;
+    padding:8px 20px;
+    text-decoration: none;
+}
+
+nav ul li ul {
+    display: none; /* this hides the drop-down menu when not hovering over it. */
+    position: absolute;
+    background-color: lightblue;
+    padding: 0px;
+    border-radius: 0PX 0PX 4PX 4px;
+
+}
+/* navigation drop-down display when hovering over it */
+nav ul li:hover ul {
+    display: block;
+}
+
+
+nav ul li ul li a {
+  padding: 10px 20px;
+
+}
+
+nav ul li ul li a:hover {
+  background-color: lightgrey;
+
+}
+
+nav ul li ul li  {
+  width: 180px;
+     border-radius: 4px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Subnavigation menu */
+.subpage {float:none; overflow: hidden;}
+
+
+
+/*Main section */
+
+.banner{justify-content: center; background-color: #ff8766; width: 80%;margin: auto; border-radius: 2pt; color: darkgoldenrod;}
+.bulletPoints{margin-left:35%;}
+ul {list-style-type: square;color: darkorchid}
+
+.name{font-weight: bold; font-size: 30pt; font-family: fantasy; color: #cc1b24;text-align: center}
+
+.twocolumns{}
+.img1 {float: left; width:200px; height: 280px; margin: 10px}
+
+/* About */
+.twocolumns{}
+.img2 {float:right; width:400px; height: 250px; margin:20px}
+h5 {font-size: 20pt}
+
+/* Design-Studio */
+.twocolumns{}
+.img3 {float: left; width:350px; height: 280px; margin: 15px}
+h6 {font-size:20pt}
+.bulletpoints2 {margin-left:35%}
+
+/* Create your Design sub page */
+.twocolumns{}
+.img5 {float: left; width:400px; height: 200px; margin: 10px}
+
+/* Help Page */
+.twocolumns{}
+.img4 {float: left; width:100px; height: 280px; margin: 15px}
+
+/* footer section */
+* {box-sizing: border-box;}
+.footer {width: 80%; margin: auto; text-align: center; background-color: #ff8766; color: darkblue;}
+.box {float:left; width: 33.33%;}
+.footer::after {content: ""; clear:both; display:table;}
+
+
+body {
+    background-image:
+        url(../Images/pexels-kai-pilger-996329.jpg);
+    background-size: 1400px;
+    }
+
+
+/* Media Queries */
+@media  print {
+    header, nav, footer {display:none;}
+    #main {width: 100%;}
+}
+
+
+/* Midsize breakpoint */
+@media  only screen and (max-width:600px) {
+    nav {float:none; width: 100%;}
+    .menu {float:none; width:100%}
+    .name {font-size: 25pt}
+    #main {float:none;width:100%}
+    .box {float: none; width: 100%}
+    .midHide {display:block;}
+    .midShow {display:none;}
+}
